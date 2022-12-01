@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+    <style>
+      .container {
+        width: 1vw;
+        height: 1vh;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .svg {
+        height: 100px;
+        width: 100px;
+        position: fixed;
+        top: 50%;
+        left: 40%;
+        fill: rgb(0, 255, 200) !important;
+      }
+      
+      @media screen and (min-width: 768px) {
+        .svg {
+          left: 50%;
+        }
+      }
+    </style>
+
+  </head>
+  
+  <body>
+    <div class="container" id="spinner">
+      <!-- <img src="./src/Images/svgs/Boldo.svg" class="pre"/> -->
+      <svg width="24" height="34" viewBox="0 0 24 34" class="svg" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0.382324 16H14.6999C19.5833 16 23.542 19.9588 23.542 24.8421V24.8421C23.542 29.7255 19.5833 33.6842 14.6999 33.6842H0.382324V16Z" fill="current"/>
+      <path d="M0.382324 0.526367H9.86186C13.5244 0.526367 16.4934 3.49543 16.4934 7.15795V7.15795C16.4934 10.8205 13.5244 13.7895 9.86186 13.7895H0.382324V0.526367Z" fill="current"/>
+      </svg>
+    </div>
+    <div id="root">
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
